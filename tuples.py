@@ -33,5 +33,3 @@ print( 33 in sri)
 print(34 in sri)
 print(45 not in sri)
 print( 90 not in sri)
-
-
