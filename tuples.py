@@ -1,11 +1,11 @@
 """ Tuples are IMMUTABLE"""
 
 t1=(11,22,33)
-# t2=tuple("qwerty")
-# t3=([11,'ww','rr',22])
-# print(t1)
-# print(t2)
-# print(t3)
+t2=tuple("qwerty")
+t3=([11,'ww','rr',22])
+print(t1)
+print(t2)
+print(t3)
 
 """ tuple function 
 max()
@@ -14,10 +14,10 @@ len()
 sum()
 
 """
-# print(len(t1))
-# print(sum(t1))
-# print(max(t1))
-# print(min(t1))
+print(len(t1))
+print(sum(t1))
+print(max(t1))
+print(min(t1))
 
 for i in t1:
     print(i)
