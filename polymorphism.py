@@ -31,7 +31,7 @@ print(obj1.RoI())
 """ overloading methods """
 
 class A():
-    def m1(self,name=None):
+    def m1(self,name=None):  #same method with different results, based on input
         if name is not None:
             print("Hello " + name)
         else:
