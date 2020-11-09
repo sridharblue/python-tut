@@ -83,5 +83,19 @@ print(text1.title())
 print(text1.swapcase())
 print(text1.replace("sridhar","blue"))
 
+#print formatting
 
+print('this is my name:{}'.format(' sridhar'))
+print('these are my names:{}{}{}'.format(' sridhar', ' blue', ' moon'))
+print('these are my names:{2}{1}{0}'.format(' sridhar', ' blue', ' moon'))
+print('these are my names:{0}{0}{0}'.format(' sridhar', ' blue', ' moon'))
+print('these are my names:{s} {b} {m}'.format(s='sridhar', b='blue', m='moon'))
 
+# float formatting follows "{value:width.precision f}"
+result = 523/123
+print('the output is: {r:1.3f}'.format(r=result))
+
+#using f-string option
+name='sri'
+age=23
+print(f'{name} is {age} years old')
