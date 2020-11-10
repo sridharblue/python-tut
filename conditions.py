@@ -80,27 +80,3 @@ for letter in string:
         break
     print(letter)
 print('Broke out of loop')
-
-
-############### NUMBERS ################# 
-
-x=5
-print(type(x))
-x1=float(x)
-print(type(x1))
-
-big=max(10,20,30,40,50)
-print(big)
-small=min(10,20,30,40,50)
-print(small)
-
-a=5
-b=10
-print(a,b)
-a,b=b,a
-print(a,b)
-
-
-
-
-
