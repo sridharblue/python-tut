@@ -19,7 +19,7 @@ args=[11,22,33]
 var(*args)
 
 """ *kwargs used to pass key,value arguments"""
-def keyval(**kwargs):
+def keyval11(**kwargs):
     print(kwargs)
 
 s={'name':'sri','color':'blue','game':'mlbb'}
@@ -35,26 +35,26 @@ keyval(**s)
 #*args
 #When a function parameter starts with an asterisk, it allows for an arbitrary number of arguments, and the function takes them in as a tuple of values. Rewriting the above function:
 
-def myfunc(*args):
+def myfunc11(*args):
     return sum(args)*.05
 
-myfunc(40,60,20)
+myfunc11(40,60,20)
 
 #It is worth noting that the word "args" is itself arbitrary - any word will do so long as it's preceded by an asterisk. To demonstrate this:
-def myfunc(*spam):
+def myfunc12(*spam):
     return sum(spam)*.05
 
-myfunc(40,60,20)
+myfunc12(40,60,20)
 
 #**kwargs
 #Similarly, Python offers a way to handle arbitrary numbers of keyworded arguments. Instead of creating a tuple of values, **kwargs builds a dictionary of key/value pairs. For example:
-def myfunc(**kwargs):
+def myfunc13(**kwargs):
     if 'fruit' in kwargs:
         print(f"My favorite fruit is {kwargs['fruit']}")  # review String Formatting and f-strings if this syntax is unfamiliar
     else:
         print("I don't like fruit")
         
-myfunc(fruit='pineapple')
+myfunc13(fruit='pineapple')
 
 #*args and **kwargs combined
 #You can pass *args and **kwargs into the same function, but *args have to appear before **kwargs
