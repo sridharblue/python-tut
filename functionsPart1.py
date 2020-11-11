@@ -25,10 +25,10 @@ print(var)
 
 """ arguments with default values """
 
-def fun(x,y=100):
+def fun2(x,y=100):
     print(x,y)
 
-fun(10,20)
+fun2(10,20)
 
 """ positional and keyword arguments """
 
