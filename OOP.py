@@ -149,7 +149,7 @@ ABSTRACT classes
 A more common practice is to use abstract classes and inheritance. An abstract class is one that never expects to be instantiated. 
 For example, we will never have an Animal object, only Dog and Cat objects, although Dogs and Cats are derived from Animals:
 '''
-class Animal:
+class Animal1:
     def __init__(self, name):    # Constructor of the class
         self.name = name
 
@@ -157,18 +157,18 @@ class Animal:
         raise NotImplementedError("Subclass must implement abstract method")
 
 
-class Dog(Animal):
+class Dog1(Animal1):
     
     def speak(self):
         return self.name+' says Woof!'
     
-class Cat(Animal):
+class Cat1(Animal1):
 
     def speak(self):
         return self.name+' says Meow!'
     
-fido = Dog('Fido')
-isis = Cat('Isis')
+fido = Dog1('Fido')
+isis = Cat1('Isis')
 
 print(fido.speak())
 print(isis.speak())
