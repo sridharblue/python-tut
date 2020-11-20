@@ -30,13 +30,13 @@ print(obj1.RoI())
 
 """ overloading methods """
 
-class A():
+class A1():
     def m1(self,name=None):  #same method with different results, based on input
         if name is not None:
             print("Hello " + name)
         else:
             print("no name")
-obj=A()
+obj=A1()
 obj.m1("sridhar")
 obj.m1()
 
