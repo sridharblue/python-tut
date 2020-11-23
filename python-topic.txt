@@ -1,0 +1,5 @@
+install packages from pypi repo using pip command
+creating modules and packages(sub packages as well)
+__name__ and __main__ usage
+pylint :- for bug testing and quality rating our code
+unittest :- for testing our scripts with user-defined/particular set of rules
