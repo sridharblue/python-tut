@@ -5,6 +5,35 @@ def gen(n):
 for num in gen(5):
     print(num)
 
+
+def genfibon(n):
+    """
+    Generate a fibonnaci sequence up to n
+    """
+    a = 1
+    b = 1
+    for i in range(n):
+        yield a
+        a,b = b,a+b
+
+for num in genfibon(10):
+    print(num)
+
+def fibon(n):
+    a = 1
+    b = 1
+    output = []
+    
+    for i in range(n):
+        output.append(a)
+        a,b = b,a+b
+        
+    return output
+
+fibon(10)
+#if we call some huge value of n (like 100000) the second function will have to keep track of every single result, when in our case we actually only care about the previous result to generate the next one!
+
+
 #Create a generator that generates the squares of numbers up to some number N
 def gensquares(N):
     
